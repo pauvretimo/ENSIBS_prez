@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <title>Prez ENSIBS</title>
+    <link rel="stylesheet" href="index.css"/>
+
+    <script type="text/javascript" src="assets/customElements.js"></script>
+</head>
+<body>
+<div id="ENSIBS" class="displayAnimation">
+
+</div>
+<div id="lEcole" class="displayAnimation">
+    <div id="Vannes">
+
+    </div>
+    <div id="Lorient">
+
+    </div>
+    <terminal-text>
+        <div slot="resp">
+            <cmd-line>
+                <span slot="cmd">Qui sommes nous ?</span>
+                <span slot="path">/Who</span>
+                <div slot="response">
+                    <span>L'ENSIBS est une école d'ingénieur Bretonne proposant cinq différentes filières :</span><br/><span> - Cyberdéfense</span><br/>
+                    <span> - Cybersécurité</span><br/>
+                    <span> - Génie Civil 4.0</span><br/>
+                    <span> - Génie Industriel 4.0</span><br/>
+                    <span> - Mécatronique</span>
+                </div>
+            </cmd-line>
+            <cmd-line>
+                <span slot="cmd">Où sommes nous ?</span>
+                <span slot="path">/Where</span>
+                <span slot="response">L'ENSIBS est située à Vannes et à Lorient dans le Morbihan</span>
+            </cmd-line>
+        </div>
+    </terminal-text>
+</div>
+<div id="divMaps">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1iwXHf9fSV3X9u3E1QgTMMyHXsDwES70&ehbc=2E312F" width="80%"
+            height="80%" id="maps"></iframe>
+</div>
+<div id="CTF">
+    <terminal-text>
+        <div slot="resp">
+            <cmd-line>
+                    <span slot="cmd">
+                        Et la Cybersécurité ?
+                    </span>
+                <span slot="path">
+                        /cyber
+                    </span>
+                <span slot="response">
+                        2 parcours
+                    </span>
+                <div slot="img" class="images">
+                </div>
+            </cmd-line>
+        </div>
+    </terminal-text>
+</div>
+<div id="LaCyber">
+    <div id="logoLog"></div>
+    <div id="logoData"></div>
+    <div id="SBD"></div>
+    <terminal-text>
+        <div slot="resp">
+            <cmd-line>
+                    <span slot="cmd">
+                        On fait quoi en cybersécurité ?
+                    </span>
+                <span slot="response">
+                        <ul>
+                            <li> Comprendre les risques liés aux vulnérabilités des systèmes numériques
+</li>
+                            <li>Appliquer des bonnes pratiques dans la conception et le  développement des systèmes numériques
+</li>
+                            <li>Exploiter les données pour les besoins de la sécurité
+</li>
+                            <li>
+                                <span>Assurer un fonctionnement sûr dans un milieu hostile :
+</span>
+                                <ul>
+                                    <li>
+                                        Diminuer fortement le nombre de vulnérabilités
+                                    </li>
+                                    <li>
+                                        Assurer l’intégrité et la confidentialité des données
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </span>
+            </cmd-line>
+        </div>
+    </terminal-text>
+</div>
+
+<div id="lesBG">
+    <div id="BG1">
+        <terminal-text>
+            <div slot="resp">
+                <cmd-line>
+                    <span slot="cmd">
+                        On fait quoi en cybersécurité du logiciel ?
+                    </span>
+                    <span slot="response">
+                        <ul>
+                            <li>Conçoit des systèmes informatiques résilients</li>
+                            <li>Applique la cybersécurité tout au long du cycle du développement d’un système
+</li>
+                            <li>Conçoit des outils pour les besoins de la cybersécurité
+</li>
+                        </ul>
+                    </span>
+                </cmd-line>
+            </div>
+        </terminal-text>
+    </div>
+    <div id="BG2">
+        <terminal-text>
+            <div slot="resp">
+                <cmd-line>
+                    <span slot="cmd">
+                        Et les débouchés ?
+                    </span>
+                    <ul slot="response">
+                        <span><b>A la sortie de l'école :</b></span>
+                        <li>Ingénieur d’étude et de développement</li>
+                        <li>Ingénieur intégrateur de systèmes sécurisés</li>
+                        <li>Ingénieur qualités (sécurité) – méthodes informatiques</li>
+                        <li>Consultant cybersécurité</li>
+                        <li>Architecte système sécurisé</li>
+                        <span><b>Et à terme :</b></span>
+                        <li>Chef de projets système</li>
+                        <li>Directeur de systèmes d’informations (DSI)</li>
+                        <li>Responsable Sécurité des systèmes d’information (RSSI)</li>
+                    </ul>
+                </cmd-line>
+            </div>
+        </terminal-text>
+    </div>
+</div>
+
+<div id="data">
+    <div id="data1">
+        <terminal-text>
+            <div slot="resp">
+                <cmd-line>
+                    <span slot="cmd">
+                        On fait quoi en cybersécurité et science des données ?
+                    </span>
+                    <span slot="response">
+                        <ul>
+                            <li>Sécurise les données et leur traitement
+</li>
+                            <li>Sécurise les données et leur traitement
+
+</li>
+                            <li>Apporte la puissance des sciences des données aux besoins de la cybersécurité
+</li>
+                        </ul>
+                    </span>
+                </cmd-line>
+            </div>
+        </terminal-text>
+    </div>
+    <div id="data2">
+        <terminal-text>
+            <div slot="resp">
+                <cmd-line>
+                    <span slot="cmd">
+                        Et les débouchés ?
+                    </span>
+                    <ul slot="response">
+                        <span><b>A la sortie de l'école :</b></span>
+                        <li>Expert sécurité des systèmes et des données
+                        </li>
+                        <li>Analyste menace cyber
+                        </li>
+                        <li>Data scientist spécialisé cybersécurité
+                        </li>
+                        <li>Responsable de l’infrastructure de données
+                        </li>
+                        <li>Ingénieur puis architecte Big data
+                        </li>
+                        <span><b>Et à terme :</b></span>
+                        <li>Chef de projet Big Data
+                        </li>
+                        <li>Chief Data Officer (CDO), directeur des données
+                        </li>
+                    </ul>
+                </cmd-line>
+            </div>
+        </terminal-text>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="Port" class="displayAnimation">
+    <terminal-text>
+        <div slot="resp">
+            <cmd-line>
+                    <span slot="cmd">
+                        On y fait quoi en Cybersécurité
+                    </span>
+                <span slot="path">
+                    /années
+                </span>
+                <div slot="img" id="onfékoi">
+                </div>
+            </cmd-line>
+            <cmd-line>
+                <span slot="cmd">
+                    Comment se passe l'alternance ?
+                </span>
+                <span slot="path">
+                    /alternance
+                </span>
+                <span slot="response">
+                    <b style="color: #b7f3ff">20 semaines à l'ENSIBS par an</b> et <b style="color: #1aa6a6">32 semaines dans l'entreprise</b>
+                </span>
+                <div slot="img" id="tableau"></div>
+            </cmd-line>
+        </div>
+    </terminal-text>
+</div>
+<div id="intervenants">
+    <terminal-text>
+        <div slot="resp">
+            <cmd-line>
+                    <span slot="cmd">
+                        Les intervenants
+                    </span>
+                <span slot="path">
+                    /Enseignement
+                </span>
+                <div slot="response" style="text-align: center; width: 100%;">
+                    <span style="width: 100%">Une répartition équilibrée des intervenants</span>
+                    <br/>
+                    <br/>
+                    <span style="width: 100%">Des experts industriels comme des enseignants chercheurs</span>
+                    <br/>
+                    <br/>
+                    <span><-------------|-------------></span>
+                </div>
+            </cmd-line>
+        </div>
+    </terminal-text>
+</div>
+<div id="LInternational">
+    <!-- Insert this tag where you want the widget to render -->
+    <iframe width="100%" height="100%" src="https://cybermap.kaspersky.com/fr/widget/dynamic/light" frameborder="0"
+            style="position: absolute; top:50%; left:50%; transform: translate(-50%, -50%)"></iframe>
+    <terminal-text>
+        <div slot="resp">
+            <cmd-line>
+                    <span slot="cmd">
+                        Ouverture à l'international
+                    </span>
+                <span slot="path">
+                    /Mobilité
+                </span>
+                <div slot="response">
+                    <ul>
+                        <li>
+                            <span>Mobilité internationale (obligation CTI) :</span>
+                            <ul>
+                                <li>
+                                    17 semaines minimum en parcours étudiant
+                                </li>
+                                <li>
+                                    9 semaines minimum en parcours apprenti
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span>Modalités</span>
+                            <ul>
+                                <li>
+                                    stage découverte
+                                </li>
+                                <li>
+                                    stage assistant ingénieur (4A ou 5A)
+                                </li>
+                                <li>
+                                    semestre à l’international avec ERASMUS
+                                </li>
+                                <li>
+                                    double diplôme
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </cmd-line>
+        </div>
+    </terminal-text>
+</div>
+<div id="recherche">
+    <terminal-text>
+        <div slot="resp">
+            <cmd-line>
+                    <span slot="cmd">
+                        Ouverture à la recherche
+                    </span>
+                <span slot="path">
+                    /PasTrouvé
+                </span>
+                <span slot="response">
+                        <ul>
+                            <li>Objectif : Doctorat
+</li>
+                            <li> 5ème année double diplôme : Ingénieur + Master 2 recherche
+</li>
+                            <li> Master recherche régional en Informatique
+</li>
+                            <li> Laboratoire d'accueil : IRISA
+</li>
+                            <li> Possibilité d'un stage recherche en entreprise
+</li>
+                            <li><span> Possibilité de poursuite en thèse :
+</span>
+                            <ul>
+                                <li>Classique (financement académique)
+</li>
+                                <li>CIFRE (alternance avec une entreprise)
+</li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </span>
+            </cmd-line>
+        </div>
+    </terminal-text>
+</div>
+
+
+<div id="recrutement">
+    <terminal-text>
+        <div slot="resp">
+            <cmd-line>
+                    <span slot="cmd">
+                        Comment entrer à l'ENSIBS
+                    </span>
+                <span slot="path">
+                    /WeHire
+                </span>
+                <span slot="response">
+                        Tous les chemins mènent à la cyber !
+                    </span>
+                <div slot="img" id="entree">
+                </div>
+            </cmd-line>
+        </div>
+    </terminal-text>
+</div>
+
+<div id="selection">
+    <terminal-text>
+        <div slot="resp">
+            <cmd-line>
+                    <span slot="cmd">
+                        Les critères de sélection ?
+                    </span>
+                <span slot="path">
+                    /select
+                </span>
+                <span slot="response">
+                        <ul>
+                            <li>Sélection académique : Avis très favorable et favorable
+</li>
+                            <li>Sens professionnel et connaissance du domaine
+</li>
+                            <li>Entretien de motivation avec des entreprises
+</li>
+                            <li>Signature d’un contrat d’apprentissage (CyberData)
+</li>
+                        </ul>
+                    </span>
+            </cmd-line>
+            <cmd-line>
+                    <span slot="cmd">
+                        Et voici le calendrier
+                    </span>
+                <span slot="path">
+                    /calendrier
+                </span>
+                <div slot="img" id="cal">
+                    </div>
+            </cmd-line>
+        </div>
+    </terminal-text>
+</div>
+<div id="leFreak">
+    <terminal-text>
+        <div slot="resp">
+            <cmd-line>
+                    <span slot="cmd">
+                        Et c'est une bonne situation ça, ingénieur en cybersécurité ?
+                    </span>
+                <span slot="path">/Embauches</span>
+                <span slot="response">
+                        100% des diplômés sont en situation d’emploi
+avant même d’avoir fini leurs études !
+(hors poursuite d’étude)<br/>
+avec un salaire moyen entre 35 000€ et 42000€ (voire plus)
+                    </span>
+            </cmd-line>
+        </div>
+    </terminal-text>
+</div>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
+
+
+
+

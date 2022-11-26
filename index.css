@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+}
+
+#ENSIBS {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    background: url("./assets/ENSIBS-ECOLE-INGENIEURS-LOGO-CMJN.png") no-repeat center;
+    background-size: auto;
+}
+
+#lEcole {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+#Lorient {
+    background: url("./assets/ensibs_lorient.jpg") no-repeat center;
+    background-size: cover;
+    height: 50vh;
+}
+
+#Vannes {
+    background: url("./assets/DJI_0165_max588x1680.jpg") no-repeat center;
+    background-size: cover;
+    height: 50vh;
+}
+
+
+#laBretagne {
+    height: 300vh;
+    width: 100vw;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+
+}
+
+#maraisSalant {
+    height: 100vh;
+    background: url("./assets/IMG_20210905_150848.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+
+#Port {
+    height: 100vh;
+    background: url("./assets/IMG_20220904_153910.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#lesBG {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+}
+
+#BG1 {
+    width: 50vw;
+    background: url("./assets/0L5A0815.png") no-repeat 30% 50%;
+    background-size: cover;
+    position: relative;
+}
+
+#BG2 {
+    width: 50vw;
+    background: url("./assets/0L5A0997.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+
+#data {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+}
+
+#data1 {
+    width: 50vw;
+    background: url("./assets/0L5A0815.png") no-repeat 30% 50%;
+    background-size: cover;
+    position: relative;
+}
+
+#data2 {
+    width: 50vw;
+    background: url("./assets/0L5A0997.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+
+#CTF {
+    height: 100vh;
+    width: 100vw;
+    background: url("./assets/photoCTF.webp") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+
+#maps {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#divMaps {
+    width: 100vw; height: 100vh; position: relative;
+}
+
+.images {
+    height: 60vh;
+    min-height: 200px;
+    background: url("assets/Cyber_spe.png") center no-repeat;
+    background-size: contain;
+}
+
+#LaCyber {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    background-color: whitesmoke;
+
+    display: flex;
+}
+
+#logoLog {
+    width: 50vw;
+    background: url("./assets/poulpe 2.png") no-repeat center;
+    background-size: contain;
+}
+
+#logoData {
+    width: 50vw;
+    background: url("assets/logoData.png") center no-repeat;
+    background-size: contain;
+}
+
+#onfékoi {
+    height: 50vh;
+    min-height: 200px;
+    background: url("assets/les3ans.png") center no-repeat;
+    background-size: contain;
+}
+
+#tableau {
+    padding: 0;
+    margin: 0;
+    min-height: 80px;
+    background: url("assets/tableau.png") center no-repeat;
+    background-size: contain;
+}
+
+
+
+#intervenants {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background: url("assets/fondInter.png") center;
+    position: relative;
+}
+
+#intervenants .justify {
+    justify-content: center;
+}
+
+
+#LInternational {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#recherche {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#recrutement {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: url("./assets/0L5A1110.png") no-repeat center;
+    background-size: cover;
+}
+
+#entree {
+    height: 60vh;
+    min-height: 200px;
+    background: url("assets/entree.png") center no-repeat;
+    background-size: contain;
+}
+
+#selection {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#cal {
+    height: 50vh;
+    min-height: 200px;
+    background: url("assets/cal.png") center no-repeat;
+    background-size: contain;
+}
+
+#leFreak {
+    width: 100vw;
+    height: 100vh;
+    background: url("./assets/IMG_20220201_111330.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.displayAnimation {
+    opacity: 0;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .entrance {
+        animation: fadeIn 2s forwards;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

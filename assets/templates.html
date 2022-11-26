@@ -1,0 +1,108 @@
+<template id="terminal-template">
+  <style>
+    .terminal {
+      overflow-x: hidden;
+      overflow-y: auto;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+
+      top: 50%;
+      left: 50%;
+      padding-bottom: 20px;
+      transform: translate(-50%, -50%);
+      height: fit-content;
+      max-height: 80%;
+      width: 80%;
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 3px white solid;
+      border-radius: 10px;
+    }
+
+    .topTerminal {
+      display: flex;
+      align-items: center;
+
+      height: 20px;
+      width: 100%;
+      padding-left: 20px;
+      background-color: white;
+    }
+
+    .fstButtonTerminal {
+      border-radius: 100%;
+      background-color: rgb(200, 20, 20);
+      height: 15px;
+      width: 15px;
+      margin-right: 10px;
+      box-shadow: 0 0 0.03em 0.03em black;
+    }
+
+    .sndButtonTerminal {
+      border-radius: 100%;
+      background-color: rgb(210, 110, 25);
+      height: 15px;
+      width: 15px;
+      margin-right: 10px;
+      box-shadow: 0 0 0.03em 0.03em black;
+    }
+
+    .thdButtonTerminal {
+      border-radius: 100%;
+      background-color: rgb(100, 200, 20);
+      height: 15px;
+      width: 15px;
+      box-shadow: 0 0 0.03em 0.03em black;
+    }
+
+    .textTerminal {
+      padding: 20px;
+    }
+  </style>
+  <div class="terminal">
+    <div class="topTerminal">
+      <div class="fstButtonTerminal"></div>
+      <div class="sndButtonTerminal"></div>
+      <div class="thdButtonTerminal"></div>
+    </div>
+    <div class="textTerminal">
+      <slot name="resp"></slot>
+    </div>
+  </div>
+</template>
+
+<template id="cmd-line">
+  <style>
+    .txt {
+      padding: 2px 0;
+      margin: 0;
+      color: white;
+      font-size: x-large;
+      font-family: 'Ubuntu Mono', monospace;
+    }
+
+    .head {
+      color: rgb(100, 161, 40);
+    }
+
+    .path {
+      color: rgb(39, 96, 155);
+    }
+
+    .title {
+      color: rgb(224, 13, 38);
+      font-weight: bold;
+    }
+  </style>
+  <div style="display: flex;">
+    <p class="txt head" style="overflow-wrap: break-word">Timo@ensibs</p>
+    <p class="txt">:</p>
+    <p class="txt path" style="overflow-wrap: break-word">~<slot name="path"></slot></p>
+    <p class="txt">$&nbsp;</p>
+    <p class="txt" style="overflow-wrap: break-word"><slot name="cmd" class="title"></slot></p>
+  </div>
+  <div style="display: flex;" class="justify">
+    <p class="txt" style="overflow-wrap: break-word"><slot name="response"></slot></p>
+  </div>
+  <slot name="img"></slot>
+</template>
