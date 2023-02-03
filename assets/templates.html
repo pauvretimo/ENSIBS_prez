@@ -77,8 +77,15 @@
       padding: 2px 0;
       margin: 0;
       color: white;
-      font-size: x-large;
       font-family: 'Ubuntu Mono', monospace;
+    }
+
+    .l{
+      font-size: x-large;
+    }
+
+    .xl {
+      font-size: xx-large;
     }
 
     .head {
@@ -86,23 +93,23 @@
     }
 
     .path {
-      color: rgb(39, 96, 155);
+      color: rgb(28, 113, 204);
     }
 
     .title {
-      color: rgb(224, 13, 38);
+      color: rgb(203, 22, 44);
       font-weight: bold;
     }
   </style>
   <div style="display: flex;">
-    <p class="txt head" style="overflow-wrap: break-word">Timo@ensibs</p>
-    <p class="txt">:</p>
-    <p class="txt path" style="overflow-wrap: break-word">~<slot name="path"></slot></p>
-    <p class="txt">$&nbsp;</p>
-    <p class="txt" style="overflow-wrap: break-word"><slot name="cmd" class="title"></slot></p>
+    <p class="txt head xl" style="overflow-wrap: break-word">Timo@ensibs</p>
+    <p class="txt xl">:</p>
+    <p class="txt path xl" style="overflow-wrap: break-word">~<slot name="path"></slot></p>
+    <p class="txt xl">$&nbsp;</p>
+    <p class="txt xl" style="overflow-wrap: break-word"><slot name="cmd" class="title"></slot></p>
   </div>
   <div style="display: flex;" class="justify">
-    <p class="txt" style="overflow-wrap: break-word"><slot name="response"></slot></p>
+    <p class="txt l" style="overflow-wrap: break-word"><slot name="response"></slot></p>
   </div>
   <slot name="img"></slot>
 </template>

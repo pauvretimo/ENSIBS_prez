@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 
+    <link rel="icon" href="assets/favicon.ico" />
+
     <meta charset="UTF-8">
     <title>Prez ENSIBS</title>
     <link rel="stylesheet" href="index.css"/>
@@ -13,6 +15,11 @@
     <script type="text/javascript" src="assets/customElements.js"></script>
 </head>
 <body>
+<div class="playBtn">
+    <svg id='playSvg' height="100%" width="100%" viewBox="0 0 70 70" stroke-linecap="round" stroke-linejoin="round">
+        <path class="play hide" d="M10 10 L60 35 L10 60 Z" stroke-width="5" stroke="grey" stroke-linecap="round" stroke-linejoin="round" fill="grey"/>
+    </svg>
+</div>
 <div id="ENSIBS" class="displayAnimation">
 
 </div>
@@ -44,11 +51,11 @@
         </div>
     </terminal-text>
 </div>
-<div id="divMaps">
+<div id="divMaps" class="displayAnimation">
     <iframe src="https://www.google.com/maps/d/embed?mid=1iwXHf9fSV3X9u3E1QgTMMyHXsDwES70&ehbc=2E312F" width="80%"
             height="80%" id="maps"></iframe>
 </div>
-<div id="CTF">
+<div id="CTF" class="displayAnimation">
     <terminal-text>
         <div slot="resp">
             <cmd-line>
@@ -67,7 +74,8 @@
         </div>
     </terminal-text>
 </div>
-<div id="LaCyber">
+<div id="LaCyber" class="displayAnimation">
+    <div id="mirror1"></div>
     <div id="logoLog"></div>
     <div id="logoData"></div>
     <div id="SBD"></div>
@@ -104,7 +112,7 @@
     </terminal-text>
 </div>
 
-<div id="lesBG">
+<div id="lesBG" class="displayAnimation">
     <div id="BG1">
         <terminal-text>
             <div slot="resp">
@@ -150,7 +158,8 @@
     </div>
 </div>
 
-<div id="data">
+<div id="data" class="displayAnimation">
+    <div id="dataImage"></div>
     <div id="data1">
         <terminal-text>
             <div slot="resp">
@@ -162,8 +171,7 @@
                         <ul>
                             <li>Sécurise les données et leur traitement
 </li>
-                            <li>Sécurise les données et leur traitement
-
+                            <li>Développe des systèmes spécifiques pour l’exploitation de données massives
 </li>
                             <li>Apporte la puissance des sciences des données aux besoins de la cybersécurité
 </li>
@@ -218,7 +226,7 @@
         <div slot="resp">
             <cmd-line>
                     <span slot="cmd">
-                        On y fait quoi en Cybersécurité
+                        Comment se compose le cursus ?
                     </span>
                 <span slot="path">
                     /années
@@ -241,7 +249,7 @@
         </div>
     </terminal-text>
 </div>
-<div id="intervenants">
+<div id="intervenants" class="displayAnimation">
     <terminal-text>
         <div slot="resp">
             <cmd-line>
@@ -251,20 +259,16 @@
                 <span slot="path">
                     /Enseignement
                 </span>
-                <div slot="response" style="text-align: center; width: 100%;">
+                <div slot="response">
                     <span style="width: 100%">Une répartition équilibrée des intervenants</span>
                     <br/>
-                    <br/>
                     <span style="width: 100%">Des experts industriels comme des enseignants chercheurs</span>
-                    <br/>
-                    <br/>
-                    <span><-------------|-------------></span>
                 </div>
             </cmd-line>
         </div>
     </terminal-text>
 </div>
-<div id="LInternational">
+<div id="LInternational" class="displayAnimation">
     <!-- Insert this tag where you want the widget to render -->
     <iframe width="100%" height="100%" src="https://cybermap.kaspersky.com/fr/widget/dynamic/light" frameborder="0"
             style="position: absolute; top:50%; left:50%; transform: translate(-50%, -50%)"></iframe>
@@ -312,7 +316,7 @@
         </div>
     </terminal-text>
 </div>
-<div id="recherche">
+<div id="recherche" class="displayAnimation">
     <terminal-text>
         <div slot="resp">
             <cmd-line>
@@ -351,7 +355,7 @@
 </div>
 
 
-<div id="recrutement">
+<div id="recrutement" class="displayAnimation">
     <terminal-text>
         <div slot="resp">
             <cmd-line>
@@ -371,7 +375,10 @@
     </terminal-text>
 </div>
 
-<div id="selection">
+<div id="selection" class="displayAnimation">
+    <div id="mirror2"></div>
+    <div id="bubbleSort"></div>
+    <script type="text/javascript" src="./assets/BubbleScript.js"></script>
     <terminal-text>
         <div slot="resp">
             <cmd-line>
@@ -407,7 +414,7 @@
         </div>
     </terminal-text>
 </div>
-<div id="leFreak">
+<div id="leFreak" class="displayAnimation">
     <terminal-text>
         <div slot="resp">
             <cmd-line>
@@ -419,13 +426,12 @@
                         100% des diplômés sont en situation d’emploi
 avant même d’avoir fini leurs études !
 (hors poursuite d’étude)<br/>
-avec un salaire moyen entre 35 000€ et 42000€ (voire plus)
+avec un salaire moyen entre 35 000€ et 42 000€ (voire plus)
                     </span>
             </cmd-line>
         </div>
     </terminal-text>
 </div>
-
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

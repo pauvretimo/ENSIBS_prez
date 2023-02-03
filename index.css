@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     padding: 0;
 }
 
@@ -104,16 +109,22 @@ body {
 
 #data1 {
     width: 50vw;
-    background: url("./assets/0L5A0815.png") no-repeat 30% 50%;
-    background-size: cover;
     position: relative;
 }
 
 #data2 {
     width: 50vw;
-    background: url("./assets/0L5A0997.png") no-repeat center;
-    background-size: cover;
     position: relative;
+}
+
+#dataImage {
+    height: 100vh;
+    width: 100vw;
+    background: url("./assets/IMG_20220307_182111.jpg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -136,7 +147,7 @@ body {
 }
 
 #divMaps {
-    width: 100vw; height: 100vh; position: relative;
+    width: 100vw; height: 100vh; position: relative; background: url("./assets/0L5A2668.jpg") no-repeat center; background-size: cover;
 }
 
 .images {
@@ -151,22 +162,61 @@ body {
     height: 100vh;
     background-size: cover;
     position: relative;
-    background-color: whitesmoke;
+    background-color: black;
 
     display: flex;
 }
 
 #logoLog {
     width: 50vw;
-    background: url("./assets/poulpe 2.png") no-repeat center;
+    scale: 0.75;
+    background: url("./assets/poulpe Web.svg") no-repeat center;
     background-size: contain;
+    animation: spin 10s linear infinite;
 }
 
 #logoData {
     width: 50vw;
+    scale: 1.3;
     background: url("assets/logoData.png") center no-repeat;
     background-size: contain;
+    animation: spin 10s linear infinite;
+    animation-delay: 0.8s;
 }
+
+@keyframes spin {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    25% {
+        transform: rotate3d(0.9, 1, 1, 180deg);
+    }
+    50% {
+        transform: rotate3d(0.9, 1, 1, 360deg);
+    }
+    75% {
+        transform: rotate3d(1, 0.9, 0.8, -180deg);
+    }
+    100% {
+        transform: rotate3d(1, 0.9, 0.8, -0deg);
+    }
+}
+
+#mirror1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: scale(1, -1);
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), color-stop(0.8, rgba(0,0,0,0.16)), color-stop(0.02, rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.16) 80%, rgba(0,0,0,0.5) 98%, rgba(0,0,0,1) 100%);
+
+    background: url("./assets/photoCTF.webp") no-repeat center;
+    background-size: cover;
+}
+
 
 #onfékoi {
     height: 50vh;
@@ -208,6 +258,18 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
+    background: url("./assets/recherche.jpg") no-repeat center, black;
+    background-size: cover;
+}
+
+#recherche::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.25);
 }
 
 #recrutement {
@@ -226,13 +288,37 @@ body {
 }
 
 #selection {
+    background: black;
+
     width: 100vw;
     height: 100vh;
     position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+#mirror2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: scale(1, -1);
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), color-stop(0.8, rgba(0,0,0,0.16)), color-stop(0.02, rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.16) 80%, rgba(0,0,0,0.5) 98%, rgba(0,0,0,1) 100%);
+
+    background: url("./assets/0L5A1110.png") no-repeat center;
+    background-size: cover;
 }
 
 #cal {
-    height: 50vh;
+    height: 40vh;
     min-height: 200px;
     background: url("assets/cal.png") center no-repeat;
     background-size: contain;
@@ -241,10 +327,21 @@ body {
 #leFreak {
     width: 100vw;
     height: 100vh;
-    background: url("./assets/IMG_20220201_111330.jpg") no-repeat center;
+    background: url("./assets/FabGlouglou.jpg") no-repeat center;
     background-size: cover;
     position: relative;
 }
+
+#leFreak::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.25);
+}
+
 
 .displayAnimation {
     opacity: 0;
@@ -265,4 +362,45 @@ body {
     to {
         opacity: 1;
     }
+}
+
+
+#bubbleSort {
+    background-color: transparent;
+    height: 413px;
+    width: 598px;
+    position: relative;
+}
+  
+.block {
+    width: 28px;
+    background-color: #6b5b95;
+    position: absolute;
+    bottom: 0;
+    transition: 0.2s all ease;
+}
+  
+.block_id {
+    position: absolute;
+    color: black;
+    margin-top: -20px;
+    width: 100%;
+    text-align: center;
+}
+
+.playBtn {
+    opacity: 0.8;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.play {
+    display: block;
+}
+
+.hide {
+    display: none;
 }
